@@ -1,13 +1,13 @@
-# 🤖 [BotName] – A Model-Agnostic Chatbot Engine (MCP-Compatible)
+# 🤖 ChatMux – A Model-Agnostic Chatbot Engine (MCP-Compatible)
 
-**[BotName]** is a future-proof chatbot framework designed to be **agnostic to the underlying LLM engine** and fully **compatible with MCP (Model Composition Protocol)**. Its mission is to provide developers and organizations with a flexible, extensible, and vendor-neutral foundation for building intelligent conversational agents that can integrate with **any** large language model — commercial or open source.
+**ChatMux** is a future-proof chatbot framework designed to be **agnostic to the underlying LLM engine** and fully **compatible with MCP (Model Composition Protocol)**. Its mission is to provide developers and organizations with a flexible, extensible, and vendor-neutral foundation for building intelligent conversational agents that can integrate with **any** large language model — commercial or open source.
 
 ---
 
 ## 🎯 Vision
 
 LLMs evolve fast. Locking into a single provider can limit innovation, increase costs, and reduce control.  
-**[BotName]** solves this by decoupling chatbot logic from any specific model, allowing you to:
+**ChatMux** solves this by decoupling chatbot logic from any specific model, allowing you to:
 
 - Switch between LLM providers with zero friction.
 - Combine multiple models using MCP routing, fallback, and chaining.
@@ -78,4 +78,6 @@ Apache License 2.0
 ## 🙋‍♀️ Want to contribute?
 
 We're currently in the design and prototyping phase.  
-If you're interested in LLMs, protocol interoperability, or chatbot frameworks, feel free to [open an issue](https://github.com/your-org/botname/issues) or reach out!
+If you're interested in LLMs, protocol interoperability, or chatbot frameworks, feel free to [open an issue](https://github.com/msalinas92/ChatMux/issues) or star the project to follow its progress.
+
+👉 GitHub repo: [https://github.com/msalinas92/ChatMux](https://github.com/msalinas92/ChatMux)
