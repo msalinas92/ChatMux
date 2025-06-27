@@ -1,70 +1,56 @@
-# 🤖 ChatMux – A Model-Agnostic Chatbot Engine (MCP-Compatible)
+# 🤖 ChatMux – The LLM-Agnostic Chatbot (MCP-Compatible)
 
-**ChatMux** is a future-proof chatbot framework designed to be **agnostic to the underlying LLM engine** and fully **compatible with MCP (Model Composition Protocol)**. Its mission is to provide developers and organizations with a flexible, extensible, and vendor-neutral foundation for building intelligent conversational agents that can integrate with **any** large language model — commercial or open source.
+**ChatMux** is a multi-model chatbot designed to operate independently of any single large language model (LLM).  
+Instead of relying on a fixed backend like GPT-4, **ChatMux** dynamically connects to various LLM providers — such as OpenAI, Claude, Gemini, Mistral, and more — adapting in real time to your preferences, context, or cost constraints.
 
----
-
-## 🎯 Vision
-
-LLMs evolve fast. Locking into a single provider can limit innovation, increase costs, and reduce control.  
-**ChatMux** solves this by decoupling chatbot logic from any specific model, allowing you to:
-
-- Switch between LLM providers with zero friction.
-- Combine multiple models using MCP routing, fallback, and chaining.
-- Build composable, maintainable bots that adapt over time.
-
-> 🧠 The bot shouldn't care whether it's talking to GPT-4, Claude, Gemini, Mistral, or a self-hosted LLaMA — and neither should you.
+> 🧠 A single chatbot, powered by many brains.
 
 ---
 
-## 🧩 Planned Features
+## 🎯 What is ChatMux?
 
-### ✅ Core Architecture
-- Model-agnostic abstraction layer for chat completions
-- Unified interface for calling:
-  - OpenAI (GPT-3.5, GPT-4)
+ChatMux is not a framework.  
+It’s a **fully functional, intelligent chatbot** that uses multiple LLMs as interchangeable engines. It can switch between providers seamlessly — manually or automatically — and is fully compatible with the **Model Composition Protocol (MCP)** for advanced model orchestration.
+
+Whether you need high-accuracy reasoning, fast responses, low-cost inference, or region-specific availability, **ChatMux picks the right engine for the job.**
+
+---
+
+## 🔥 Key Features
+
+- ⚙️ **Multi-model support**
+  - OpenAI (GPT-4, GPT-3.5)
   - Anthropic (Claude)
   - Google (Gemini)
   - Mistral
   - Cohere
-  - Open-source models (LLaMA, MPT, Falcon, etc.)
-- Extensible plugin system for:
-  - RAG (Retrieval-Augmented Generation)
-  - Tool calling / function calling
-  - Memory management
-  - User context injection
-  - Multilingual fallback
+  - Local or open-source models (LLaMA, MPT, Falcon, etc.)
 
-### 🔀 MCP Integration
-- Native support for **Model Composition Protocol** (https://modelcomposition.org)
-- Routing strategies (e.g. by content type, cost, latency)
-- Fallback chains with graceful degradation
-- Parallel model execution with consensus/aggregation
+- 🔀 **Intelligent routing**
+  - Choose the best model based on cost, speed, or context
+  - Fallback and chaining support via MCP
+  - Custom strategies (e.g., use Gemini for search, GPT-4 for reasoning)
 
-### 🛠️ Developer Features
-- Hot-swappable provider configuration
-- Built-in logging and tracing hooks
-- Easy to integrate with LangChain, Semantic Kernel, or custom pipelines
-- Support for local-first or edge deployments (e.g. WebLLM, Ollama)
+- 🧠 **One interface, many engines**
+  - No need to manage different APIs — ChatMux handles the switching
+  - Unified experience, regardless of underlying model
 
-### 💼 Enterprise-Ready Goals
-- OpenTelemetry-compatible observability
-- Role-based access control (RBAC)
-- Multi-tenant architecture (SaaS mode)
-- API-first with OpenAPI spec
+- 🌐 **Vendor neutrality**
+  - Avoid lock-in
+  - Optimize for performance, pricing, and availability
 
 ---
 
-## 🗺 Roadmap Highlights
+## 🗺 Roadmap (High-Level)
 
-| Milestone             | Status     |
-|-----------------------|------------|
-| Project scaffolding   | 🚧 Planned |
-| Core engine (agnostic) | 🕓 Planned |
-| MCP routing layer     | 🕓 Planned |
-| Multi-model fallback  | 🕓 Planned |
-| Admin UI / dashboard  | 🕓 Planned |
-| v0.1 Release          | ⏳ Coming Soon |
+| Feature                         | Status     |
+|----------------------------------|------------|
+| Multi-LLM engine switching       | 🕓 Planned |
+| MCP protocol integration         | 🕓 Planned |
+| CLI & web-based interaction      | 🕓 Planned |
+| Persistent user memory           | 🕓 Planned |
+| RAG integration (vector search)  | 🕓 Planned |
+| v0.1 public release              | ⏳ Coming Soon |
 
 ---
 
@@ -75,9 +61,8 @@ Apache License 2.0
 
 ---
 
-## 🙋‍♀️ Want to contribute?
+## ⭐ GitHub Repository
 
-We're currently in the design and prototyping phase.  
-If you're interested in LLMs, protocol interoperability, or chatbot frameworks, feel free to [open an issue](https://github.com/msalinas92/ChatMux/issues) or star the project to follow its progress.
+🔗 https://github.com/msalinas92/ChatMux
 
-👉 GitHub repo: [https://github.com/msalinas92/ChatMux](https://github.com/msalinas92/ChatMux)
+If you're interested in vendor-agnostic conversational AI, protocol-level interoperability, or building on top of multiple LLMs without friction — consider starring the repo or contributing!
